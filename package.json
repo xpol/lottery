@@ -60,6 +60,7 @@
     "forge": {
       "packagerConfig": {
         "name": "Lottery",
+        "icon": "assets/icons/icon.png",
         "asar": true
       },
       "makers": [
