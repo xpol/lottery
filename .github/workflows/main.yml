@@ -40,4 +40,5 @@ jobs:
 
       - name: Build and Publish
         run: yarn release --arch ia32
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
