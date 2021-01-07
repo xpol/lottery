@@ -30,10 +30,14 @@ jobs:
       - name: Install yarn
         run: npm install -g yarn
 
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
       - name: Install node modules
         run: yarn install --frozen-lockfile
 
-      - name: Build
+      - name: Build and Publish
         run: yarn release --arch ia32
 
-      
