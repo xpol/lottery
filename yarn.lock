@@ -1300,6 +1300,21 @@
   dependencies:
     "@electron-forge/shared-types" "6.0.0-beta.54"
 
+"@electron-forge/publisher-github@^6.0.0-beta.54":
+  version "6.0.0-beta.54"
+  resolved "https://registry.npm.taobao.org/@electron-forge/publisher-github/download/@electron-forge/publisher-github-6.0.0-beta.54.tgz#9f949975f3a86d3f68826514075dac608494450e"
+  integrity sha1-n5SZdfOobT9ogmUUB12sYISURQ4=
+  dependencies:
+    "@electron-forge/async-ora" "6.0.0-beta.54"
+    "@electron-forge/publisher-base" "6.0.0-beta.54"
+    "@electron-forge/shared-types" "6.0.0-beta.54"
+    "@octokit/core" "^3.1.2"
+    "@octokit/rest" "^18.0.6"
+    "@octokit/types" "^5.5.0"
+    fs-extra "^9.0.1"
+    lodash "^4.17.20"
+    mime-types "^2.1.25"
+
 "@electron-forge/shared-types@6.0.0-beta.54":
   version "6.0.0-beta.54"
   resolved "https://registry.npm.taobao.org/@electron-forge/shared-types/download/@electron-forge/shared-types-6.0.0-beta.54.tgz#61ceb5e0754314035dc934e86eb21b29f893ac19"
@@ -1648,6 +1663,116 @@
   integrity sha1-3hAwcNrA9IzknPZpPCOvWcD3BGQ=
   dependencies:
     mkdirp "^1.0.4"
+
+"@octokit/auth-token@^2.4.4":
+  version "2.4.4"
+  resolved "https://registry.npm.taobao.org/@octokit/auth-token/download/@octokit/auth-token-2.4.4.tgz?cache=0&sync_timestamp=1606801555951&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fauth-token%2Fdownload%2F%40octokit%2Fauth-token-2.4.4.tgz#ee31c69b01d0378c12fd3ffe406030f3d94d3b56"
+  integrity sha1-7jHGmwHQN4wS/T/+QGAw89lNO1Y=
+  dependencies:
+    "@octokit/types" "^6.0.0"
+
+"@octokit/core@^3.1.2", "@octokit/core@^3.2.3":
+  version "3.2.4"
+  resolved "https://registry.npm.taobao.org/@octokit/core/download/@octokit/core-3.2.4.tgz#5791256057a962eca972e31818f02454897fd106"
+  integrity sha1-V5ElYFepYuypcuMYGPAkVIl/0QY=
+  dependencies:
+    "@octokit/auth-token" "^2.4.4"
+    "@octokit/graphql" "^4.5.8"
+    "@octokit/request" "^5.4.12"
+    "@octokit/types" "^6.0.3"
+    before-after-hook "^2.1.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/endpoint@^6.0.1":
+  version "6.0.10"
+  resolved "https://registry.npm.taobao.org/@octokit/endpoint/download/@octokit/endpoint-6.0.10.tgz?cache=0&sync_timestamp=1606801555397&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fendpoint%2Fdownload%2F%40octokit%2Fendpoint-6.0.10.tgz#741ce1fa2f4fb77ce8ebe0c6eaf5ce63f565f8e8"
+  integrity sha1-dBzh+i9Pt3zo6+DG6vXOY/Vl+Og=
+  dependencies:
+    "@octokit/types" "^6.0.0"
+    is-plain-object "^5.0.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/graphql@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.npm.taobao.org/@octokit/graphql/download/@octokit/graphql-4.5.8.tgz?cache=0&sync_timestamp=1606801610488&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Fgraphql%2Fdownload%2F%40octokit%2Fgraphql-4.5.8.tgz#d42373633c3015d0eafce64a8ce196be167fdd9b"
+  integrity sha1-1CNzYzwwFdDq/OZKjOGWvhZ/3Zs=
+  dependencies:
+    "@octokit/request" "^5.3.0"
+    "@octokit/types" "^6.0.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/openapi-types@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/@octokit/openapi-types/download/@octokit/openapi-types-2.2.0.tgz#123e0438a0bc718ccdac3b5a2e69b3dd00daa85b"
+  integrity sha1-Ej4EOKC8cYzNrDtaLmmz3QDaqFs=
+
+"@octokit/plugin-paginate-rest@^2.6.2":
+  version "2.7.0"
+  resolved "https://registry.npm.taobao.org/@octokit/plugin-paginate-rest/download/@octokit/plugin-paginate-rest-2.7.0.tgz#6bb7b043c246e0654119a6ec4e72a172c9e2c7f3"
+  integrity sha1-a7ewQ8JG4GVBGabsTnKhcsnix/M=
+  dependencies:
+    "@octokit/types" "^6.0.1"
+
+"@octokit/plugin-request-log@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/@octokit/plugin-request-log/download/@octokit/plugin-request-log-1.0.2.tgz#394d59ec734cd2f122431fbaf05099861ece3c44"
+  integrity sha1-OU1Z7HNM0vEiQx+68FCZhh7OPEQ=
+
+"@octokit/plugin-rest-endpoint-methods@4.4.1":
+  version "4.4.1"
+  resolved "https://registry.npm.taobao.org/@octokit/plugin-rest-endpoint-methods/download/@octokit/plugin-rest-endpoint-methods-4.4.1.tgz#105cf93255432155de078c9efc33bd4e14d1cd63"
+  integrity sha1-EFz5MlVDIVXeB4ye/DO9ThTRzWM=
+  dependencies:
+    "@octokit/types" "^6.1.0"
+    deprecation "^2.3.1"
+
+"@octokit/request-error@^2.0.0":
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/@octokit/request-error/download/@octokit/request-error-2.0.4.tgz#07dd5c0521d2ee975201274c472a127917741262"
+  integrity sha1-B91cBSHS7pdSASdMRyoSeRd0EmI=
+  dependencies:
+    "@octokit/types" "^6.0.0"
+    deprecation "^2.0.0"
+    once "^1.4.0"
+
+"@octokit/request@^5.3.0", "@octokit/request@^5.4.12":
+  version "5.4.12"
+  resolved "https://registry.npm.taobao.org/@octokit/request/download/@octokit/request-5.4.12.tgz?cache=0&sync_timestamp=1606959200446&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Frequest%2Fdownload%2F%40octokit%2Frequest-5.4.12.tgz#b04826fa934670c56b135a81447be2c1723a2ffc"
+  integrity sha1-sEgm+pNGcMVrE1qBRHviwXI6L/w=
+  dependencies:
+    "@octokit/endpoint" "^6.0.1"
+    "@octokit/request-error" "^2.0.0"
+    "@octokit/types" "^6.0.3"
+    deprecation "^2.0.0"
+    is-plain-object "^5.0.0"
+    node-fetch "^2.6.1"
+    once "^1.4.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/rest@^18.0.6":
+  version "18.0.12"
+  resolved "https://registry.npm.taobao.org/@octokit/rest/download/@octokit/rest-18.0.12.tgz?cache=0&sync_timestamp=1607084032141&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40octokit%2Frest%2Fdownload%2F%40octokit%2Frest-18.0.12.tgz#278bd41358c56d87c201e787e8adc0cac132503a"
+  integrity sha1-J4vUE1jFbYfCAeeH6K3AysEyUDo=
+  dependencies:
+    "@octokit/core" "^3.2.3"
+    "@octokit/plugin-paginate-rest" "^2.6.2"
+    "@octokit/plugin-request-log" "^1.0.2"
+    "@octokit/plugin-rest-endpoint-methods" "4.4.1"
+
+"@octokit/types@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.npm.taobao.org/@octokit/types/download/@octokit/types-5.5.0.tgz#e5f06e8db21246ca102aa28444cdb13ae17a139b"
+  integrity sha1-5fBujbISRsoQKqKERM2xOuF6E5s=
+  dependencies:
+    "@types/node" ">= 8"
+
+"@octokit/types@^6.0.0", "@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.0":
+  version "6.2.1"
+  resolved "https://registry.npm.taobao.org/@octokit/types/download/@octokit/types-6.2.1.tgz#7f881fe44475ab1825776a4a59ca1ae082ed1043"
+  integrity sha1-f4gf5ER1qxgld2pKWcoa4ILtEEM=
+  dependencies:
+    "@octokit/openapi-types" "^2.2.0"
+    "@types/node" ">= 8"
 
 "@pmmmwh/react-refresh-webpack-plugin@0.4.2":
   version "0.4.2"
@@ -2043,7 +2168,7 @@
   resolved "https://registry.npm.taobao.org/@types/minimatch/download/@types/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha1-PcoOPzOyAPx9ETnAzZbBJoyt/Z0=
 
-"@types/node@*":
+"@types/node@*", "@types/node@>= 8":
   version "14.14.20"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
   integrity sha1-95dIY+3SHR+KSUpz6OKzZYYVw0A=
@@ -3049,6 +3174,11 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+before-after-hook@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/before-after-hook/download/before-after-hook-2.1.0.tgz#b6c03487f44e24200dd30ca5e6a1979c5d2fb635"
+  integrity sha1-tsA0h/ROJCAN0wyl5qGXnF0vtjU=
 
 bfj@^7.0.2:
   version "7.0.2"
@@ -4579,6 +4709,11 @@ depd@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/depd/download/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
+
+deprecation@^2.0.0, deprecation@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/deprecation/download/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
+  integrity sha1-Y2jL20Cr8zc7UlrIfkomDDpwCRk=
 
 des.js@^1.0.0:
   version "1.0.1"
@@ -7026,6 +7161,11 @@ is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   dependencies:
     isobject "^3.0.1"
 
+is-plain-object@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/is-plain-object/download/is-plain-object-5.0.0.tgz#4427f50ab3429e9025ea7d52e9043a9ef4159344"
+  integrity sha1-RCf1CrNCnpAl6n1S6QQ6nvQVk0Q=
+
 is-potential-custom-element-name@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/is-potential-custom-element-name/download/is-potential-custom-element-name-1.0.0.tgz#0c52e54bcca391bb2c494b21e8626d7336c6e397"
@@ -8300,7 +8440,7 @@ mime-db@1.45.0, "mime-db@>= 1.43.0 < 2":
   resolved "https://registry.npm.taobao.org/mime-db/download/mime-db-1.45.0.tgz?cache=0&sync_timestamp=1600831159918&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime-db%2Fdownload%2Fmime-db-1.45.0.tgz#cceeda21ccd7c3a745eba2decd55d4b73e7879ea"
   integrity sha1-zO7aIczXw6dF66LezVXUtz54eeo=
 
-mime-types@^2.1.12, mime-types@^2.1.27, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
+mime-types@^2.1.12, mime-types@^2.1.25, mime-types@^2.1.27, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.28"
   resolved "https://registry.npm.taobao.org/mime-types/download/mime-types-2.1.28.tgz?cache=0&sync_timestamp=1609559913860&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime-types%2Fdownload%2Fmime-types-2.1.28.tgz#1160c4757eab2c5363888e005273ecf79d2a0ecd"
   integrity sha1-EWDEdX6rLFNjiI4AUnPs950qDs0=
@@ -8594,7 +8734,7 @@ node-addon-api@^1.6.0:
   resolved "https://registry.npm.taobao.org/node-addon-api/download/node-addon-api-1.7.2.tgz?cache=0&sync_timestamp=1608165723476&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-addon-api%2Fdownload%2Fnode-addon-api-1.7.2.tgz#3df30b95720b53c24e59948b49532b662444f54d"
   integrity sha1-PfMLlXILU8JOWZSLSVMrZiRE9U0=
 
-node-fetch@^2.6.0:
+node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npm.taobao.org/node-fetch/download/node-fetch-2.6.1.tgz?cache=0&sync_timestamp=1599309202591&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-fetch%2Fdownload%2Fnode-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha1-BFvTI2Mfdu0uK1VXM5RBa2OaAFI=
@@ -12533,6 +12673,11 @@ unique-string@^1.0.0:
   integrity sha1-nhBXzKhRq7kzmPizOuGHuZyuwRo=
   dependencies:
     crypto-random-string "^1.0.0"
+
+universal-user-agent@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/universal-user-agent/download/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
+  integrity sha1-M4H4UDslHA2c0hvB3pOeyd9UgO4=
 
 universalify@^0.1.0:
   version "0.1.2"
