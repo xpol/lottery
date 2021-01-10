@@ -40,7 +40,7 @@ export const takePrize = (index) => {
 
 export const addPrize = () => {
     prizes = [...prizes];
-    prizes.push({name: "未知礼物", count: 1})
+    prizes.push({name: "", count: 0})
     savePrizes(prizes);
     return prizes;
 }
@@ -70,4 +70,14 @@ export const hasAnyPrizes = (prizes) => {
         return false;
     }
     return prizes.some(p => p.count > 0);
+}
+
+export const totalPrizes = (prizes) => {
+    if (prizes.length === 0) {
+        return 0;
+    }
+    return prizes.reduce((s, v) => {
+        s += v.count;
+        return s;
+    }, 0);
 }

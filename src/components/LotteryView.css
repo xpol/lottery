@@ -6,26 +6,24 @@
     align-items: center;
 }
 
-.LotteryView tr {
-    padding: 8px;
-}
-
-.LotteryView tr:nth-child(even) {
-    background: #eee;
-}
 
 .LotteryView input {
-    font-size: 5vh;
+    font-size: 4vh;
     padding: 8px;
     color: #c3a26e;
     border: 0;
     background: transparent;
+    font-family: serif;
+}
+
+.LotteryView input::placeholder {
+    color: #7a6b57;
+    font-style: italic;
 }
 
 .LotteryView input:focus {
     outline: none;
 }
-
 
 
 .LotteryView input:focus {
@@ -34,7 +32,7 @@
 }
 
 .LotteryView h1.title {
-    font-size: 8vh;
+    font-size: 6vh;
     text-align: center;
     color: #f45e4f;
 }
@@ -42,21 +40,6 @@
 .LotteryView input[type=number] {
     text-align: right;
     width: 9vh;
-}
-
-.LotteryView a.draw {
-    border-radius: 8px;
-    background: #f45e4f;
-    text-decoration: none;
-    color: white;
-    box-sizing: border-box;
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-    padding: 1vh 5vh;
-    margin-top: 5vh;
 }
 
 .LotteryView .actions {
@@ -70,4 +53,36 @@
     padding: 8px;
     margin: 8px;
     border-radius: 50%;
+}
+
+.LotteryView table {
+    font-size: 4vh;
+    color: #c3a26e;
+}
+
+
+.LotteryView tr {
+    padding: 8px;
+}
+
+.LotteryView tr:nth-child(even) {
+    background: #eee;
+}
+
+.LotteryView thead,
+.LotteryView tfoot {
+    font-style: italic;
+}
+
+.LotteryView tfoot th,
+.LotteryView tfoot td {
+    font-style: italic;
+}
+
+.LotteryView tfoot th {
+    text-align: right;
+}
+
+.LotteryView tfoot td {
+    text-align: center;
 }
