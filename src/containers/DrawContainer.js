@@ -1,15 +1,18 @@
 import {useState} from "react";
+import {Redirect} from "react-router-dom";
 import shuffle from "lodash.shuffle";
 import chunk from "lodash.chunk";
 import memoize from "memoize-one";
-import cx from "classnames";
 
-import RedPacket from "../components/RedPacket";
+
 import Animate from "../components/Animate"
+import Back from "../components/Back";
+import RedPacket from "../components/RedPacket";
+
 import {hasAnyPrizes, loadPrizes, takePrize} from "../model";
 
 import "./DrawContainer.css"
-import {Redirect} from "react-router-dom";
+
 
 const flattenPrizes = (prizes) => {
     const r = [];
@@ -73,17 +76,21 @@ const DrawContainer = () => {
     }
 
     return (
-        <Animate play={active}>
-            <div className={cx("DrawContainer", "container")} onClick={handleTakePrize}>
-                {candidates.map((chunk, i) => (
-                    <div className="row" key={i}>
-                        {chunk.map((prize, y) => (
-                            <RedPacket key={y} {...prize} active={active} round={round} onOpen={handleOpenPrize} />
-                        ))}
-                    </div>
-                ))}
-            </div>
-        </Animate>
+        <div className="DrawContainer">
+            <Animate play={active}>
+                <div className="container" onClick={handleTakePrize}>
+                    {candidates.map((chunk, i) => (
+                        <div className="row" key={i}>
+                            {chunk.map((prize, y) => (
+                                <RedPacket key={y} {...prize} active={active} round={round} onOpen={handleOpenPrize} />
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </Animate>
+            <Back />
+        </div>
+
     )
 }
 

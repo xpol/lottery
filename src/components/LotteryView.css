@@ -64,5 +64,10 @@
 }
 
 .LotteryView .button {
-    padding: 1vh 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 50%;
 }

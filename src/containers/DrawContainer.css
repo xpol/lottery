@@ -1,6 +1,8 @@
+.DrawContainer {
+    position: relative;
+}
 
-
-.DrawContainer.container {
+.DrawContainer .container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -10,7 +12,7 @@
     background: #f5f5f5;
 }
 
-.DrawContainer.container .row {
+.DrawContainer .container .row {
     display: flex;
     flex-flow: row nowrap;
 }

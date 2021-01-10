@@ -1,0 +1,12 @@
+.Back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 50%;
+    background: #eeeeee;
+}
