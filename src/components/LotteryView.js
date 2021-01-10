@@ -23,6 +23,8 @@ const LotteryView = ({name, prizes, onAdd, onUpdate, onDelete}) => {
     const handleStart = (e) => {
         if (hasAnyPrizes(prizes)) {
             history.push("/draw");
+        } else {
+            window.alert("奖品已经抽完");
         }
     }
 
