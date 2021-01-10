@@ -1,0 +1,68 @@
+.LotteryView {
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LotteryView tr {
+    padding: 8px;
+}
+
+.LotteryView tr:nth-child(even) {
+    background: #eee;
+}
+
+.LotteryView input {
+    font-size: 5vh;
+    padding: 8px;
+    color: #c3a26e;
+    border: 0;
+    background: transparent;
+}
+
+.LotteryView input:focus {
+    outline: none;
+}
+
+
+
+.LotteryView input:focus {
+    background: #e3e2e3;
+    border-radius: 8px;
+}
+
+.LotteryView h1.title {
+    font-size: 8vh;
+    text-align: center;
+    color: #f45e4f;
+}
+
+.LotteryView input[type=number] {
+    text-align: right;
+    width: 9vh;
+}
+
+.LotteryView a.draw {
+    border-radius: 8px;
+    background: #f45e4f;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    padding: 1vh 5vh;
+    margin-top: 5vh;
+}
+
+.LotteryView .actions {
+    padding: 1vh;
+}
+
+.LotteryView .button {
+    padding: 1vh 5vh;
+}

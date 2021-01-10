@@ -1,13 +1,33 @@
 import './App.css';
-import DrawContainer from "./containers/DrawContainer"
+
+import LotteryViewContainer from "./containers/LotteryViewContainer";
+import DrawContainer from "./containers/DrawContainer";
+
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <DrawContainer />
-      </header>
-    </div>
+      <Router>
+          <div>
+              <Switch>
+                  <Route exact path="/draw">
+                      <DrawContainer />
+                  </Route>
+                  <Route exact path="/configure">
+                      <LotteryViewContainer />
+                  </Route>
+                  <Route path="*">
+                      <Redirect to={"/configure"} />
+                  </Route>
+              </Switch>
+          </div>
+      </Router>
   );
 }
 
