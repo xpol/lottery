@@ -8,24 +8,6 @@
     "name": "Xpol Wan"
   },
   "description": "This program let you configure and perform lottery",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "animate.css": "^4.1.1",
-    "classnames": "^2.2.6",
-    "electron-is-dev": "^1.2.0",
-    "electron-squirrel-startup": "^1.0.0",
-    "lodash.chunk": "^4.2.0",
-    "lodash.shuffle": "^4.2.0",
-    "memoize-one": "^5.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -59,10 +41,26 @@
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "@electron-forge/publisher-github": "^6.0.0-beta.54",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "animate.css": "^4.1.1",
+    "classnames": "^2.2.6",
     "concurrently": "^5.2.0",
-    "electron": "^11.1.1",
+    "electron": "^20.3.12",
     "electron-devtools-installer": "^3.1.1",
-    "wait-on": "^5.1.0"
+    "electron-is-dev": "^1.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "lodash.chunk": "^4.2.0",
+    "lodash.shuffle": "^4.2.0",
+    "memoize-one": "^5.1.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "wait-on": "^5.1.0",
+    "web-vitals": "^0.2.4"
   },
   "config": {
     "forge": {
